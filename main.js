@@ -11,17 +11,17 @@ const color2 = getInput(1)
 // const outPut1= colorDeconstructor(color)
 
 
-if(color1 === 'undefined' && color2 === 'undefined'){
+if(color1 === undefined && color2 === undefined){
   return  " Please place in atleast one color"
   // if(color2 === 'undefines'){
   //   return  " Please place in atleast one color"
   // } return  " Please place in atleast one color"
 }
-else if(color1 !== 'undefined' && color2 === 'undefined'){
+else if(color1 !== undefined && color2 === undefined){
   let colorDecon = colorDeconstructor
-  console.log(colorDecon)
+  console.log(colorDecon(color1))
 }
-else if(color1 !== 'undefined' && color2 !== 'undefined'){
+else if (color1 !== undefined && color2 !== undefined){
   let colors = colorCombinator
   console.log(colors(color1,color2))
 }
